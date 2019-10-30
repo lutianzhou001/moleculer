@@ -35,8 +35,10 @@ async function placeOrderSell(symbol, depth, amount, account_type) {
 async function getAmount(symbol) {
 	let balance =  await fcoin.getBalance().then(data => {return data.data;});
 	for (let i=0; i<balance.length; i++){
-		if (balance[i].currency == symbol.slice(0, symbol.indexOf("usdt")+1));
+		if (balance[i].currency == symbol.slice(0, symbol.indexOf("usdt"))){;
 		console.log(balance[i].available);
+			break;
+		}
 	}
 }
 
