@@ -26,7 +26,7 @@
   "dependencies": {
     "fcoin-api": "^1.0.6",
     "moleculer": "^0.13.9",
-    "moleculer-web": "^0.8.5",
+    "moleculer-web": "^0.10.4",
     "nats": "^1.3.0"
   },
   "engines": {
